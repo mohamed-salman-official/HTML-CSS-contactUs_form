@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.form {
+    background-color: white;
+    padding: 20px 20px 20px;
+    border-radius: 10px;
+    margin: auto;
+    color: gray;
+    width: 75%;
+}
+
+.form h3 {
+    color: black;
+}
+
+.form .name {
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+}
+
+.form .name .input {
+    width: 48%;
+}
+
+.form .name .input input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.form .input input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.form .textLabel {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.form .input {
+    padding-bottom: 10px;
+}
+
+.radio {
+    width: 48%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.radio input {
+    margin: 0 10px 0 10px;
+}
+
+.radiodiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textBox {
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+}
+
+.textBox textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px ;
+}
+
+.btn button {
+    width: 100%;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.consent input {
+    scale: 1.5;
+    margin-right: 10px;
+}
+.consent label {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rebeccapurple;
+    }
+
+    .form .name {
+        flex-direction: column;
+    }
+
+    .form .name .input {
+        width: 100%;
+    }
+    .radiodiv {
+        flex-direction: column;
+    }
+    .radio {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .textBox textarea {
+        height: 200px;
+    }
+
+    .form h3 {
+        font-size: 28px;
+    }
+}
